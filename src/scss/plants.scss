@@ -1,0 +1,139 @@
+body{
+	width: 100%;
+	display: flex;
+	font-family: 'Catamaran', sans-serif;
+	margin: 0;
+}
+
+.tree-of-souls-container, .helicoradian-container, 
+.home-tree-container, .panopyra-container  {
+	width: 100%;
+	position: absolute;
+	// background-image: url(../../src/img/tree-of-souls-bg.png);
+	background-size: cover;
+	// background-color: black;
+	// background-repeat: no-repeat;
+	.section-title{
+		display: flex;
+		justify-content: center;
+		color: RGB(201,211,253);
+		position: relative; 
+		bottom: -110px;
+		font-size: 1.5rem;
+		// background-image: url(../../src/img/shadow-background-souls.png)
+	}
+	.hero-image{
+		width: 100%;
+		height: 54vh;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+		background-image: url(../../src/img/tree-of-souls-bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+
+	}
+
+	.shaddow{
+		padding-bottom: 25%;
+		background-image: url(../../src/img/shadowws.png);
+		background-size: cover;
+	}
+
+	.text-container{
+		width: 100%;
+		padding-bottom: 5%;
+		background-color: black;
+
+		p{
+			width: 85%;
+		    text-align: justify;
+			margin: 0 auto;
+		    letter-spacing: 1px;
+		    font-size: 0.8rem;
+		    line-height: 1.5;
+		    color: RGB(201,211,253);
+		    
+		}
+		
+	}
+
+	footer{
+		width: 100%;
+		
+		.logo{
+		    margin: 0 auto;
+		    width: 50%;
+
+		    img{
+		    	width: 100%;
+		    }
+		}	
+
+		.page-indicators{
+			display: flex;
+			width: 40%;
+			margin: 0 auto;
+			justify-content: space-between;
+			.dot{
+				width: 15px;
+				height: 15px;
+				background-color: RGB(44,60,65);
+				border-radius: 50%;
+
+			}
+		}	
+	}
+}
+
+.helicoradian-container{
+	left: 100%;
+
+	.hero-image{
+		width: 100%;
+		height: 54vh;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+		background-image: url(../../src/img/helicoradian-bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+.home-tree-container{
+	left: 200%;
+
+		.hero-image{
+		width: 100%;
+		height: 54vh;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+		background-image: url(../../src/img/hometree-bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+}
+
+.panopyra-container{
+	left: 300%;
+
+	.hero-image{
+		width: 100%;
+		height: 54vh;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+		background-image: url(../../src/img/panopyra-bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+}
+
+.slider{
+	width: 100%;
+	position: absolute;
+}

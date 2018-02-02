@@ -1,0 +1,77 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+@import 'reset';
+@import 'forest.scss';
+@import 'plants.scss';
+@import 'slick-theme.scss';
+@import 'slick.scss';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #ccc;
+	font-family: 'Catamaran', sans-serif;
+}
+
+@media screen and  (min-width: 375px){
+	body{
+		background-image: url(../../src/img/mobile-hero-background.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-bottom: 100vh;
+	}
+
+	.forest-container{
+
+	}
+	.mobile-hero-text{
+	    position: absolute;
+	    width: 100%;
+	    bottom: 15%;
+	
+
+		.avatar-logo{
+		    width: 60%;
+		    position: relative;
+		    left: 0;
+		    padding-bottom: 16%;
+		    margin: 0 auto;
+			background-image: url(../../src/img/avatar-logo.png);
+			background-size: contain;
+			margin-bottom: 5%;
+			background-repeat: no-repeat;
+
+		}
+
+		.enter-pandora{
+			width: 62%;
+			position: absolute;
+			left: 18vw;
+			margin: 0 auto;
+			background-image: url(../../src/img/enter-pandora.png);
+			padding-bottom: 10%;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
+
+
