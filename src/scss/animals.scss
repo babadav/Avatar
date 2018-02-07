@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background: #ccc;
+	font-family: 'Catamaran', sans-serif;
+}
+
+
+@media screen and  (min-width: 375px){
+	.animals-container{
+		display: flex;
+	    width: 400%;
+		.direhorse-bg-container,
+		.mountain-banshee-bg-container,
+		.thanator-bg-container,
+		.hexapede-bg-container{
+			width: 100vw;
+			background-image: url(../../src/img/direhorse/horseBackground.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    padding-bottom: 30%;
+
+		    .text-container{
+	    	    width: 88%;
+			    margin: 0 auto;
+			    margin-top: 5%;
+			    margin-bottom: 10%;
+			    text-align: justify;
+		    	color: RGB(189, 251, 255);
+		    	background-color: RGBA(91,91,98,0.85);
+		    	line-height: 1.2;
+
+		    	p{
+		    		width: 90%;
+		    		margin: 0 auto;
+		    	}
+
+		    	.section-title{
+		    		text-align: center;
+		    		
+		    		h1{
+		    			margin-bottom: 2%;
+		    		}
+		    	}
+
+			    	.animal-image{
+		    		    width: 66%;
+					    margin: 0 auto;
+
+			    	img{
+				    	width: 100%;
+			    	}
+			    }
+
+			    .page-indicators{
+					display: flex;
+					width: 40%;
+					margin: 0 auto;
+					justify-content: space-between;
+					margin-bottom: 2%;
+				.dot{
+					width: 15px;
+					height: 15px;
+					background-color: RGB(44,60,65);
+					border-radius: 50%;
+
+				}
+			}
+		}
+
+		    
+
+
+
+	footer{
+		width: 100%;
+		
+		.logo{
+		    margin: 0 auto;
+		    width: 50%;
+
+		    img{
+		    	width: 100%;
+		    }
+		}		
+	}
+		}
+
+
+		.mountain-banshee-bg-container{
+			background-image: url(../../src/img/banshee/bansheeBackground.png);
+
+			.text-container{
+				color: RGB(240,238,255);
+				background-color: RGBA(59,103,166,0.85);
+			}
+		}
+
+		.thanator-bg-container{
+			background-image: url(../../src/img/thanator/thanaBackground.png);
+
+			.text-container{
+				color: RGB(240,238,255);
+				background-color: RGBA(10,77,153,0.85);
+			}
+		}
+
+		.hexapede-bg-container{
+			background-image: url(../../src/img/hexapede/hexaBackground.png);
+
+			.text-container{
+				color: RGB(240,238,255);
+				background-color: RGBA(26,26,106,0.85);
+			}
+		}
+	}
+}

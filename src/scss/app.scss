@@ -17,6 +17,7 @@ TABLE OF CONTENTS:
 @import 'plants.scss';
 @import 'slick-theme.scss';
 @import 'slick.scss';
+@import 'animals.scss';
 
 
 /* 1. Main Layout ================================= */
@@ -37,6 +38,7 @@ body {
 		background-size: cover;
 		background-repeat: no-repeat;
 		padding-bottom: 100vh;
+
 	}
 
 	.forest-container{
@@ -71,6 +73,30 @@ body {
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
+	}
+
+	.face-dots-1{
+	    width: 69%;
+	    position: absolute;
+	    left: 25%;
+	    top: 5vh;
+	    opacity: 0;
+
+	    img{
+	    	width: 100%;
+	    }
+	}
+
+	.face-dots-2{
+	    width: 69%;
+	    position: absolute;
+        left: 40%;
+	    top: 15vh;
+	    opacity: 0;
+
+	    img{
+	    	width: 100%;
+	    }
 	}
 }
 
