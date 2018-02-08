@@ -11,6 +11,7 @@ body{
 	position: absolute;
 	// background-image: url(../../src/img/tree-of-souls-bg.png);
 	background-size: cover;
+
 	// background-color: black;
 	// background-repeat: no-repeat;
 	.section-title{
@@ -18,7 +19,7 @@ body{
 		justify-content: center;
 		color: RGB(201,211,253);
 		position: relative; 
-		bottom: -110px;
+
 		font-size: 1.5rem;
 		// background-image: url(../../src/img/shadow-background-souls.png)
 	}
@@ -31,6 +32,7 @@ body{
 		background-image: url(../../src/img/tree-of-souls-bg.png);
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-attachment: fixed;
 
 
 	}
@@ -136,4 +138,80 @@ body{
 .slider{
 	width: 100%;
 	position: absolute;
+}
+
+@media screen and  (min-width: 768px){
+
+    .tree-of-souls-container , 
+    .helicoradian-container , 
+    .home-tree-container ,
+     .panopyra-container  {
+     	.hero-image{
+	     	background-attachment: unset;
+	 	    padding-bottom: 32%;
+		    background-position: center center;
+     	}
+
+     	.text-container{
+ 		    position: absolute;
+		    width: 46%;
+		    background: transparent;
+
+		    .section-title{
+		    	top: 0;
+		    }
+
+		    footer{
+     			display: none;
+     		}
+     	}
+
+
+
+     	.shaddow{
+     		background-image: none;
+     	}
+     }
+
+     .tree-of-souls-container{
+		.hero-image{
+			background-image: url(../../src/img/tree-of-souls-desktop.png);
+			position: absolute;
+		}
+
+		.text-container{
+				top: 0;
+			    right: 0;
+			}
+		}	
+
+	.helicoradian-container{
+		.hero-image{
+			background-image: url(../../src/img/helocordian-desktop.png);
+		}
+		.text-container{
+			top: 0%;
+		    left: 30px;
+		}
+	}
+
+	.home-tree-container{
+		.hero-image{
+			background-image: url(../../src/img/hometree-desktop.png);
+		}
+
+		.text-container{
+				top: 45%;
+			}
+	}
+
+	.panopyra-container{
+		.hero-image{
+			background-image: url(../../src/img/panopyra-desktop.png);
+		}
+
+		.text-container{
+				top: 45%;
+			}
+	}
 }

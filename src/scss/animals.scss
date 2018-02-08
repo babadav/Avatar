@@ -6,10 +6,40 @@
 body {
 	background: #ccc;
 	font-family: 'Catamaran', sans-serif;
+	margin: 0;
 }
 
 
 @media screen and  (min-width: 375px){
+
+	nav{
+		position: absolute;
+	    width: 90%;
+	    margin: 0 auto;
+	    margin-top: 5%;
+	    display: flex;
+	    justify-content: space-around;
+	    align-items: center;
+			.hamburger{
+				width: 40px;
+				display: flex;
+				align-items: center;
+				
+				img{
+					width: 100%;
+				}
+		}
+
+		.logo{
+		    width: 57%;
+		    display: flex;
+		    align-items: center;
+
+		    img{
+		    	width: 100%;
+		    }
+		}
+	}
 	.animals-container{
 		display: flex;
 	    width: 400%;
@@ -25,13 +55,15 @@ body {
 		    flex-direction: column;
 		    justify-content: center;
 		    align-items: center;
-		    padding-bottom: 30%;
+
+
 
 		    .text-container{
 	    	    width: 88%;
 			    margin: 0 auto;
-			    margin-top: 5%;
+			    margin-top: 10%;
 			    margin-bottom: 10%;
+			    padding-top: 5%;
 			    text-align: justify;
 		    	color: RGB(189, 251, 255);
 		    	background-color: RGBA(91,91,98,0.85);
@@ -43,10 +75,12 @@ body {
 		    	}
 
 		    	.section-title{
-		    		text-align: center;
+		    		width: 80%;
+		    		margin: 0 auto;
+		    		margin-bottom: 5%;
 		    		
-		    		h1{
-		    			margin-bottom: 2%;
+		    		img{
+		    			width: 100%;
 		    		}
 		    	}
 
@@ -64,7 +98,7 @@ body {
 					width: 40%;
 					margin: 0 auto;
 					justify-content: space-between;
-					margin-bottom: 2%;
+					margin-bottom: 5%;
 				.dot{
 					width: 15px;
 					height: 15px;
@@ -74,29 +108,31 @@ body {
 				}
 			}
 		}
-
-		    
-
-
-
-	footer{
-		width: 100%;
-		
-		.logo{
-		    margin: 0 auto;
-		    width: 50%;
-
-		    img{
-		    	width: 100%;
-		    }
-		}		
 	}
-		}
 
 
 		.mountain-banshee-bg-container{
 			background-image: url(../../src/img/banshee/bansheeBackground.png);
 
+			nav{
+				position: relative;
+				top: 0;
+			    width: 90%;
+			    margin: 0 auto;
+			    margin-top: 5%;
+			    display: flex;
+			    justify-content: space-around;
+			    align-items: center;
+			.hamburger{
+				width: 40px;
+				display: flex;
+				align-items: center;
+				
+				img{
+					width: 100%;
+				}
+			}
+		}
 			.text-container{
 				color: RGB(240,238,255);
 				background-color: RGBA(59,103,166,0.85);
@@ -105,6 +141,28 @@ body {
 
 		.thanator-bg-container{
 			background-image: url(../../src/img/thanator/thanaBackground.png);
+
+			nav{
+				position: absolute;
+				top: 0;
+			    width: 90%;
+			    margin: 0 auto;
+			    margin-top: 5%;
+			    display: flex;
+			    justify-content: space-around;
+			    align-items: center;
+			.hamburger{
+				width: 40px;
+				display: flex;
+				align-items: center;
+				
+				img{
+					width: 100%;
+				}
+			}
+		}
+
+
 
 			.text-container{
 				color: RGB(240,238,255);
@@ -115,10 +173,56 @@ body {
 		.hexapede-bg-container{
 			background-image: url(../../src/img/hexapede/hexaBackground.png);
 
+
+			nav{
+				position: relative;
+				top: 0;
+			    width: 90%;
+			    margin: 0 auto;
+			    margin-top: 5%;
+			    display: flex;
+			    justify-content: space-around;
+			    align-items: center;
+			.hamburger{
+				width: 40px;
+				display: flex;
+				align-items: center;
+				
+				img{
+					width: 100%;
+				}
+			}
+		}
+
 			.text-container{
 				color: RGB(240,238,255);
 				background-color: RGBA(26,26,106,0.85);
 			}
+		}
+	}
+}
+
+
+@media screen and  (min-width: 768px){
+	.animals-container{
+		.direhorse-bg-container{
+			background-image: url(../../src/img/dire-background-desktop.png);
+		    
+
+		    .text-container{
+		    	display: flex;
+		    flex-wrap: wrap;
+		    flex-direction: row-reverse;
+		    	p{
+		    	width: 30%;
+		    }
+
+		    .animal-image{
+		    	width: 25%;
+		    }
+		    }
+
+		    
 		}
 	}
 }

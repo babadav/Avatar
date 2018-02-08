@@ -27,21 +27,13 @@ TABLE OF CONTENTS:
 }
 
 
-body {
-	background: #ccc;
-	font-family: 'Catamaran', sans-serif;
-}
-
-@media screen and  (min-width: 375px){
 	body{
 		background-image: url(../../src/img/mobile-hero-background.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		padding-bottom: 100vh;
-
-	}
-
-	.forest-container{
+		margin: 0;
+		font-family: 'Catamaran', sans-serif;
 
 	}
 	.mobile-hero-text{
@@ -98,6 +90,55 @@ body {
 	    	width: 100%;
 	    }
 	}
+@media screen and  (min-width: 768px){
+	body{
+		background-image: url(../../src/img/desktop-hero-background.png);
+		background-position-x: -25vw;
+		background-size: cover;
+		background-repeat: repeat;
+	}
+	.mobile-hero-text {
+		bottom: 45%;
+		.avatar-logo{
+			width: 20%;
+			max-width: 450px;
+			margin: 0;
+			padding-bottom: 70px;
+			left: 5%;
+		}
+		.enter-pandora{
+					width: 32%;
+					left: 5vw;
+					max-width: 400px;
+				}
+	}
 }
 
+@media screen and  (min-width: 1024px){
+	body{
+		background-image: url(../../src/img/desktop-hero-background.png);
+
+		.mobile-hero-text{
+			.avatar-logo{
+			    width: 30%;
+			    max-width: 540px;
+			    margin: 0;
+			    padding-bottom: 110px;
+			    left: 10%;
+			}
+
+			.enter-pandora{
+				left: 11%;
+			}
+		}
+	}
+}
+
+@media screen and  (min-width: 1366px){
+	body{
+		background-position-x: 5vw;
+
+
+	}
+}
 

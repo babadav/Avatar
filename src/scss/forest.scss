@@ -4,14 +4,17 @@ body{
     font-family: 'Catamaran', sans-serif;
     margin: 0;
     overflow: hidden;
+    background-color: black;
 }
 
 .forest-container{
     width: 100%;
     padding-bottom: 100vh;
     padding-top: 10%;
-    background-image: url(../../src/img/dimmed-forest.png);
-    background-size: 100%;
+     background-image: url(../../src/img/dimmed-forest-desktop.png);
+     background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 0px;
     background-repeat: no-repeat;
 
     .avatar-logo{
@@ -36,7 +39,8 @@ body{
         .plant-glow{
             width: 100%;
             position: absolute;
-            top: 9vh;
+            top: 22vh;
+            left: -17px;
             opacity: 0;
             transition: all .8s;
             background-image: url(../../src/img/plant-glow.png);
@@ -52,9 +56,9 @@ body{
 
         .small-pink-glow{
             position: absolute;
-            width: 42%;
-            left: 52%;
-            top: 1%;
+            width: 45%;
+            left: 60%;
+            top: 14%;
             opacity: 0;
 
             img{
@@ -66,10 +70,11 @@ body{
 
     }
     .large-pink-glow{
-            width: 50%;
-            position: absolute;
-            left: 17%;
-            top: 3%;
+            width: 61%;
+            max-width: 300px;
+            position: fixed;
+            left: 13%;
+            top: 4%;
             opacity: 0;
             
 
@@ -84,13 +89,14 @@ body{
         z-index: 100;
 
         .dinosaur{
-            width: 56%;
+            width: 94%;
             position: absolute;
-            right: 52px;
-            top: -10px;
-            background-image: url(../../src/img/dinosaur.png);
+            max-width: 250px;
+            right: -38px;
+            top: 54vh;
+            background-image: url(../../src/img/full-dino.png);
             background-repeat: no-repeat;
-            padding-bottom: 100%;
+            padding-bottom: 50%;
             background-size: contain;
             transform: scale(1.5);
 
@@ -98,3 +104,44 @@ body{
     }
 }
 
+
+
+@media screen and  (min-width: 768px){
+    .forest-container{
+        background-image: url(../../src/img/dimmed-forest-desktop.png);
+        padding-bottom: 80%;
+
+        .avatar-logo{
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: 550px;
+        }
+
+        .dinosaur-container{
+                top: 0;
+                right: 98px;
+        }
+
+    }
+}
+
+@media screen and  (min-width: 1024px){
+    .forest-container{
+        background-image: url(../../src/img/dimmed-forest-desktop.png);
+        padding-bottom: 60%;
+
+        .dinosaur-container{
+            top: 210px;
+            right: 98px;
+        }
+    }
+}
+
+@media screen and  (min-width: 1366px){
+    .forest-container{
+        background-image: url(../../src/img/dimmed-forest-desktop.png);
+        padding-bottom: 40%;
+        background-position: center;
+        
+    }
+}
